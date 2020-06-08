@@ -1,11 +1,34 @@
-# JetBrains Mono Nerd Font v1.0.5
+# JetBrains Mono Nerd Font v1.0.6
 
 For personal use only.
 
 - [Glyph Sets and Code Points](https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-Points)
-- Run `setup.sh` to setup dev enviroment
-- Run `patch.sh` to patch fonts
-- Run `rename.py` to rename fonts
+
+## Patch the font
+
+1. Update to the latest version
+
+   ```sh
+   git remote add upstream https://github.com/JetBrains/JetBrainsMono.git
+   git checkout master
+   git pull upstream master
+   git checkout nerd-fonts
+   git merge <latest_version>
+   ```
+
+2. Patch the font Manual:
+
+- Manual:
+
+  - Run `setup.sh` to setup dev enviroment
+  - Run `patch.sh` to patch fonts
+  - Run `rename.py` to rename fonts
+
+- Using Docker
+
+  ```sh
+  ./patch_docker.sh`
+  ```
 
 ## Credits
 

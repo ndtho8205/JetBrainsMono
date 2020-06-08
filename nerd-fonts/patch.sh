@@ -1,16 +1,21 @@
 #!/usr/bin/env bash
 
-rm -rf *.ttf
+rm -rf ./*.ttf
 
 # patch
-fontforge -script font-patcher --material \
-  ../ttf/JetBrainsMono-Regular.ttf
+patch() {
+  fontforge -script font-patcher \
+    --powerlineextra \
+    --fontawesome --octicons --fontlinux --pomicons \
+    --fontawesomeextension --powersymbols --weather --material \
+    --careful --no-progressbars --quiet \
+    "$1"
+}
 
-fontforge -script font-patcher --material \
-  ../ttf/JetBrainsMono-Bold.ttf
+patch ../ttf/JetBrainsMono-Regular.ttf
 
-fontforge -script font-patcher --material \
-  ../ttf/JetBrainsMono-Medium.ttf
+patch ../ttf/JetBrainsMono-Bold.ttf
 
-fontforge -script font-patcher --material \
-  ../ttf/JetBrainsMono-Italic.ttf
+patch ../ttf/JetBrainsMono-Medium.ttf
+
+patch ../ttf/JetBrainsMono-Italic.ttf
