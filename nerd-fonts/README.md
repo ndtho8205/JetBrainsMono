@@ -1,4 +1,4 @@
-# JetBrains Mono Nerd Font v1.0.6
+# JetBrains Mono Nerd Font v2.002
 
 For personal use only.
 
@@ -27,7 +27,7 @@ For personal use only.
 - Using Docker
 
   ```sh
-  ./patch_docker.sh`
+  ./patch_docker.sh
   ```
 
 ## Credits
