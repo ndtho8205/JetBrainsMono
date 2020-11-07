@@ -12,10 +12,10 @@ patch() {
     "$1"
 }
 
-patch ../ttf/JetBrainsMono-Regular.ttf
+patch ../fonts/ttf/JetBrainsMono-Regular.ttf
 
-patch ../ttf/JetBrainsMono-Bold.ttf
+patch ../fonts/ttf/JetBrainsMono-Bold.ttf
 
-patch ../ttf/JetBrainsMono-Medium.ttf
+patch ../fonts/ttf/JetBrainsMono-Medium.ttf
 
-patch ../ttf/JetBrainsMono-Italic.ttf
+patch ../fonts/ttf/JetBrainsMono-Italic.ttf

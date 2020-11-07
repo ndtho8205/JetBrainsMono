@@ -1,4 +1,4 @@
-# JetBrains Mono Nerd Font v2.002
+# JetBrains Mono Nerd Font v2.210
 
 For personal use only.
 
@@ -10,13 +10,11 @@ For personal use only.
 
    ```sh
    git remote add upstream https://github.com/JetBrains/JetBrainsMono.git
-   git checkout master
-   git pull upstream master
    git checkout nerd-fonts
-   git merge <latest_version>
+   git rebase -i upstream/master
    ```
 
-2. Patch the font Manual:
+2. Patch the font:
 
 - Manual:
 
