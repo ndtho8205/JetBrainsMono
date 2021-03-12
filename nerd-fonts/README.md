@@ -1,4 +1,4 @@
-# JetBrains Mono Nerd Font v2.210
+# JetBrains Mono Nerd Font v2.225
 
 For personal use only.
 
